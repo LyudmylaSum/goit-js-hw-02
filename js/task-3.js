@@ -1,6 +1,6 @@
 function checkForSpam(message) {
     const lowerCaseMessage = message.toLowerCase();
-    const hasSpan = lowerCaseMessage.includes("spam", "sale");
+    const hasSpan = lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
     if (hasSpan) {
         return true; 
     } else {
